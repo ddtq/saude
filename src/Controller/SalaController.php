@@ -21,7 +21,7 @@ class SalaController extends AbstractController
         if( $this->validarRequisicao($request) ){
             return $this->json([ 
                 "result"=>true,
-                "message"=>"Voce será redirecionado para sala virtual de atendimento. Se você não for redirecionado, clique aqui.",
+                "message"=>"Voce será redirecionado para sala virtual de atendimento. Se você não for redirecionado, ",
                 "redirect"=>"https://meet.jit.si/ddtqssi",
                 "token válido"=>$data['token'] 
             ]);
